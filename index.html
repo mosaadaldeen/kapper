@@ -1,48 +1,306 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Hamburger Menu</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <link rel="stylesheet" type="text/css" href="css/menu.css" />
-    <link
+    <title>Amjad kapper</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+    <!-- <link
       href="https://fonts.googleapis.com/css?family=Dancing+Script:700|Roboto&display=swap"
       rel="stylesheet"
+    /> -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
   <body>
-    <div class="menu-wrap">
-      <input type="checkbox" class="toggler" />
-      <div class="hamburger">
-        <div></div>
+    <!-- Hero -->
+    <section class="et-hero-tabs">
+      <div class="background">
+        <!-- <div class="icon">barbershop</div> -->
+        <h1>Amjad barbershop</h1>
+        <h3>We maken je stijlvol</h3>
       </div>
-      <div class="menu">
-        <div>
-          <div>
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Contact Us</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="content">
-        <h2>Welcome</h2>
-        <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard.
-        </p>
-        <a href="#" class="btn">Read more</a>
-      </div>
-    </div>
-
-    <section>
-      <div>
-        <h1>welcome to baber stolwijk</h1>
+      <div class="et-hero-tabs-container">
+        <a class="et-hero-tab" href="#About">About</a>
+        <a class="et-hero-tab" href="#services">Services</a>
+        <a class="et-hero-tab" href="#prijzen">Prijzen</a>
+        <a class="et-hero-tab" href="#onze-kappers">Kappers</a>
+        <a class="et-hero-tab" href="#contact">Contact</a>
+        <span class="et-hero-tab-slider"></span>
       </div>
     </section>
+
+    <!-- Main -->
+    <main class="et-main">
+      <section class="About" id="About">
+        <h1>Welkom op Sham Barber Shop de Haar Salon</h1>
+        <hr />
+        <h3>
+          Shambarber shop is opgericht in 2015 met de inspiratie om de laatste
+          haar- en baardstijl te maken in het harde Rotterdam, Nederland. De
+          eigenaar Louai heeft de afgelopen 20 jaar een ervaring opgedaan in
+          Damascus. Daarna verhuisde hij naar de UAE om daar een van de beroemde
+          kappers te zijn.
+        </h3>
+        <div class="boxes">
+          <div class="phone">
+            <i class="fa fa-phone"> </i>
+            <p>
+              +31 (0)6-850-76012 <br />
+              +31 (0)6-855-31189 <br />
+              Bel ons 24/7
+            </p>
+          </div>
+          <div class="address">
+            <i class="fa fa-map"></i>
+            <p>
+              Koninginneweg 10A <br />2941XJ <br />
+              Lekkerkerk
+            </p>
+          </div>
+          <div class="open">
+            <i class="fa fa-calendar"></i>
+            <p>
+              10:00 - 19:00 /Ma-Zon <br />
+              09:00 - 20:00 /Vrij-Zater <br />
+              Open Altijd
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- ------------------------------------ -->
+
+      <section class="services" id="services">
+        <h1>Services</h1>
+        <h3>Wat we doen is speciaal, en speciaal is wat we doen</h3>
+        <div class="sections">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img
+                  src="https://www.shambarbershop.nl/static/mainscreen/images/1.jpg"
+                  alt="Avatar"
+                  style="width: 300px; height: 250px;"
+                />
+              </div>
+              <div class="flip-card-back">
+                <h2>Haar Style</h2>
+                <p>
+                  Bekijk hier ons haarstyling magazine, met alles voor je Jouw
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img
+                  src="https://www.shambarbershop.nl/static/mainscreen/images/2.jpg"
+                  alt="Avatar"
+                  style="width: 300px; height: 250px;"
+                />
+              </div>
+              <div class="flip-card-back">
+                <h2>Baard-behandeling</h2>
+                <p>
+                  Behandel je baard met een speciale conditioner die je baard
+                  kan hydrateren en de voeding kan geven die het nodig heeft.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img
+                  src="https://www.shambarbershop.nl/static/mainscreen/images/3.jpg"
+                  alt="Avatar"
+                  style="width: 300px; height: 250px;"
+                />
+              </div>
+              <div class="flip-card-back">
+                <h2>Gezichts-behandeling</h2>
+                <p>
+                  We hebben de beste plaatsen voor Facials /
+                  Gezichts-behandelingen in het gebied gevonden
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img
+                  src="https://www.shambarbershop.nl/static/mainscreen/images/4.jpg"
+                  alt="Avatar"
+                  style="width: 300px; height: 250px;"
+                />
+              </div>
+              <div class="flip-card-back">
+                <h2>Contouren</h2>
+                <p>
+                  FInstrument dat ingezet wordt om de ruimtelijke contrasten in
+                  gebied in stand te houden en om een goede balans te vinden
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img
+                  src="https://www.shambarbershop.nl/static/mainscreen/images/5.jpg"
+                  alt="Avatar"
+                  style="width: 300px; height: 250px;"
+                />
+              </div>
+              <div class="flip-card-back">
+                <h2>Waxing</h2>
+                <p>
+                  Waxen is het proces van ontharing vanaf de wortel door een
+                  bedekking van een kleverige substantie te gebruiken,
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ------------------------------------------------------------------- -->
+
+      <section class="prijzen" id="prijzen">
+        <h1>Prijzen</h1>
+        <h3>
+          Je bent van harte welkom op afspraak. Hierbij vindt u onze prijs en
+          tijd
+        </h3>
+        <div class="soorten-prijzen">
+          <div class="soort">
+            <div class="sub-soort">
+              <h3>Haar</h3>
+              <hr />
+              <span>15.00€</span>
+            </div>
+            <p>Deze afspraak duurt ongeweer : 30 minuten</p>
+          </div>
+          <div class="soort">
+            <div class="sub-soort">
+              <h3>Haar knippen en Baard knippen</h3>
+              <hr />
+              <span>25.00€</span>
+            </div>
+            <p>Deze afspraak duurt ongeweer : 60 minuten</p>
+          </div>
+          <div class="soort">
+            <div class="sub-soort">
+              <h3>Verven</h3>
+              <hr />
+              <span>20.00€</span>
+            </div>
+            <p>Deze afspraak duurt ongeweer : 30 minuten</p>
+          </div>
+          <div class="soort">
+            <div class="sub-soort">
+              <h3>Gezichtsbehandeling</h3>
+              <hr />
+              <span>35.00€</span>
+            </div>
+            <p>Deze afspraak duurt ongeweer : 60 minuten</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ------------------------------------------------------------------- -->
+
+      <section class="onze-kappers" id="onze-kappers">
+        <h1>Onze kappers</h1>
+        <h3>
+          Sham Barbershop bestaat uit drie beste kappers in het gebied. Kies een
+          kapper van je keuze en maak je afspraak nu aan
+        </h3>
+        <div class="kappers">
+          <div class="kapper">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQm387MzMIxMSLzu1BbQYfyyNPXE9CieaptSA&usqp=CAU"
+              alt=""
+            />
+            <h4>SHAM</h4>
+            <p>Kapper Specialist</p>
+          </div>
+          <div class="kapper">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRuF_YPp2cOfO9QUeTKbBiQiqE9aPd8biA_IQ&usqp=CAU"
+              alt=""
+            />
+            <h4>MOE</h4>
+            <p>Kapper Specialist</p>
+          </div>
+          <div class="kapper">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQwTKJ0xOELHm2Nrlg4s5hD0_nn3jtw1LQZjg&usqp=CAU"
+              alt=""
+            />
+            <h4>TONY</h4>
+            <p>Kapper Specialist</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ------------------------------------------------------------------- -->
+
+      <section class="contact" id="contact">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2461.552336230972!2d4.686903715421357!3d51.905633189328896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c42b60c8f5d22b%3A0xeac6cc7c43e51040!2sWeidelaan%2043%2C%202941%20RJ%20Lekkerkerk!5e0!3m2!1sen!2snl!4v1597648453113!5m2!1sen!2snl"
+          width="600"
+          height="450"
+          frameborder="0"
+          style="border: 0;"
+          allowfullscreen=""
+          aria-hidden="false"
+          tabindex="0"
+        ></iframe>
+        <!-- <div class="info">
+          <h1>Contact</h1>
+          <h3>something about other</h3>
+        </div> -->
+        <div class="column">
+          <form action="/action_page.php">
+            <label for="fname">First Name</label>
+            <input
+              type="text"
+              id="fname"
+              name="firstname"
+              placeholder="Your name.."
+            />
+            <label for="lname">Last Name</label>
+            <input
+              type="text"
+              id="lname"
+              name="lastname"
+              placeholder="Your last name.."
+            />
+            <label for="subject">Subject</label>
+            <textarea
+              id="subject"
+              name="subject"
+              placeholder="Write something.."
+              style="height: 170px;"
+            ></textarea>
+            <input type="submit" value="Submit" />
+          </form>
+        </div>
+      </section>
+      <!-- ------------------------------------------------------------------- -->
+      <br />
+      <footer class="footer">
+        <h3>Copyright ©2020 Amjad Barber Shop | All rights reserved</h3>
+      </footer>
+    </main>
+    <script src="main.js"></script>
   </body>
 </html>
